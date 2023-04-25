@@ -10,6 +10,12 @@ imageFileInput.addEventListener("change", (e) => {
 
   image = new Image();
   image.src = imageDataUrl;
+  
+  
+//download the image
+let a = document.querySelector(".a");
+a.href=imageDataUrl;
+a.download= "group.jpg";
 
   image.addEventListener(
     "load",
